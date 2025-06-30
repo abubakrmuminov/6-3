@@ -6,16 +6,156 @@
   /* ====== */
 
   --midnight: #014e56;
-  --lightCoral: #F67E7E;
-  --white: #fff; 
-  --ratureBlue: #79C8C7;
-  --policeBlue: #2C6269;
+  --lightCoral: #f67e7e;
+  --white: #fff;
+  --ratureBlue: #79c8c7;
+  --policeBlue: #2c6269;
   --deepJungleGreen: #004047;
-  --sacramentoStateGreen: #012F34;
+  --sacramentoStateGreen: #012f34;
   --darkGreen: #002529;
 }
 
+/* =========== */
+/* start codes */
+/* =========== */
 
 body {
-  font-family: 'Livvic', sans-serif;
+  font-family: "Livvic", sans-serif;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1110px;
+}
+
+header {
+  background-color: var(--midnight);
+  padding: 73px 165px 250px 165px;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 65px;
+}
+
+header::after {
+  content: "";
+  background-image: url(./assets/home/hero-circle.svg);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: -100px;
+  top: 250px;
+}
+
+header::before {
+  content: "";
+  background-image: url(./assets/home/hero-circle-double.svg);
+  width: 358px;
+  height: 200px;
+  position: absolute;
+  bottom: -100px;
+  right: 165px;
+}
+
+.headerNav {
+  display: flex;
+  gap: 80px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav li {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.nav li a {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.contact {
+  font-family: "Livvic";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  background-color: transparent;
+  border: 2px solid var(--white);
+  border-radius: 24px;
+  padding: 9px 33px;
+  color: var(--white);
+  transition: 0.2s;
+}
+
+.contact:hover {
+  color: var(--sacramentoStateGreen);
+  background-color: var(--white);
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.heroSection {
+  display: flex;
+  padding-top: 65px;
+}
+
+.heroHeading {
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  letter-spacing: 0px;
+  color: var(--white);
+  width: 635px;
+}
+
+.headingSpan {
+  color: var(--lightCoral);
+}
+
+.heroText {
+  width: 445px;
+  height: 112px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: var(--white);
+}
+
+.rectangle {
+  width: 50px;
+  height: 4px;
+  background-color: var(--ratureBlue);
+  margin-bottom: 79px;
+}
+
