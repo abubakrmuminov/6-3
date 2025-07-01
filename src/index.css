@@ -57,6 +57,7 @@ header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 65px;
+  z-index: 2;
 }
 
 header::after {
@@ -67,6 +68,7 @@ header::after {
   position: absolute;
   left: -100px;
   top: 250px;
+  z-index: 1;
 }
 
 header::before {
@@ -77,6 +79,7 @@ header::before {
   position: absolute;
   bottom: -100px;
   right: 165px;
+  z-index: 1;
 }
 
 .headerNav {
@@ -158,4 +161,338 @@ header::before {
   background-color: var(--ratureBlue);
   margin-bottom: 79px;
 }
+
+/* ======== */
+/* Secvices */
+/* ======== */
+
+.info {
+  background-color: var(--darkGreen);
+  padding-top: 140px;
+  padding-bottom: 140px;
+  z-index: 2;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.info::after {
+  content: "";
+  background-image: url(./assets/home/feature-cicrcle.svg);
+  width: 200px;
+  height: 244px;
+  position: absolute;
+  right: -100px;
+  bottom: 0;
+  z-index: 2;
+}
+
+.buildManage {
+  display: flex;
+  gap: 50px;
+}
+
+.rectangle2 {
+  width: 50px;
+  height: 4px;
+  background-color: var(--lightCoral);
+  margin-bottom: 54px;
+}
+
+.buildTextBox {
+  padding-top: 140px;
+}
+
+.buildText {
+  color: var(--white);
+  width: 445px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0px;
+}
+
+.secriveList {
+  margin-left: 125px;
+  padding-top: 198px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.services {
+  display: flex;
+  gap: 23px;
+}
+
+.serviceContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.serviceName {
+  color: var(--lightCoral);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.serviceText {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  opacity: 80%;
+}
+
+/* ======= */
+/* rewievs */
+/* ======= */
+
+.reviewsSection {
+  background-color: var(--deepJungleGreen);
+  padding-top: 140px;
+  padding-bottom: 140px;
+  position: relative;
+}
+
+.reviewsSection::after {
+  content: "";
+  background-image: url(./assets/home/reviews-bg-left.svg);
+  width: 147px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.reviewsSection::before {
+  content: "";
+  background-image: url(./assets/home/reviews-bg-right.svg);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+  z-index: 1;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 92px;
+}
+
+.reviewsTitle {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: var(--white);
+}
+
+.reviewsSpan {
+  color: var(--ratureBlue);
+}
+
+.userReviews {
+  display: flex;
+  gap: 30px;
+}
+
+.review {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.reviewText {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.reviewer {
+  color: var(--ratureBlue);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.reviewerJob {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.avatarBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviewerAvatar {
+  border-radius: 50%;
+  align-items: center;
+}
+
+/* ====== */
+/* footer */
+/* ====== */
+
+footer {
+  background-color: var(--darkGreen);
+  color: var(--white);
+  padding-bottom: 48px;
+  position: relative;
+  z-index: 2;
+}
+
+.contactFooter {
+  background-color: var(--lightCoral);
+  padding-top: 76px;
+  padding-bottom: 76px;
+}
+
+.footerContact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactTitle {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0px;
+  color: var(--white);
+}
+
+.footer {
+  display: flex;
+  gap: 125px;
+  padding-top: 48px;
+}
+
+.footerMain {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footerNav {
+  display: flex;
+  gap: 40px;
+}
+
+.footerNav a {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  opacity: 60%;
+}
+
+.footerSocial {
+  display: flex;
+  flex-direction: column;
+  gap: 51px;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+}
+
+.footerSocial {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+
+.socials span {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: right;
+  opacity: 60%;
+}
+
+/* ================================================ */
+/* ===================2 PAGE======================= */
+/* ================================================ */
+
+/* ===== */
+/* about */
+/* ===== */
+
+.about2 {
+  background-color: var(--midnight);
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+  z-index: 2;
+  overflow-x: hidden;
+}
+
+.about2::after {
+  content: "";
+  background-image: url(./assets/about/about-page-circle.svg);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  right: -100px;
+  bottom: 0;
+  z-index: 1;
+}
+
+.about2Title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100px;
+  letter-spacing: 0px;
+  color: var(--white);
+}
+
+.about2Text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: var(--white);
+}
+
+.about2In {
+  display: flex;
+  gap: 250px;
+}
+
+/* ========= */
+/* directors */
+/* ========= */
 
